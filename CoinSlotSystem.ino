@@ -15,7 +15,7 @@ char hexaKeys[ROWS][COLS] = {
 byte rowPins[ROWS] = {8, 7, 6, 5};
 byte colPins[COLS] = {4, 3, 2};
 
-const int counterPin = 10; 
+const int counterPin = 11; 
 Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS);
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
